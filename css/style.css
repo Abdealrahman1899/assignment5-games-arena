@@ -1,0 +1,726 @@
+body {
+    background-color: black;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+:root {
+    --main-color: #cbfe1c
+}
+
+.navbar {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.263);
+    z-index: 2000;
+}
+
+.navicon {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.navicon:hover {
+    color: var(--main-color);
+}
+
+.nav_btn {
+    background-color: var(--main-color);
+    border: 2px var(--main-color) solid;
+    transition: all 0.3s ease;
+}
+
+.nav_btn:hover {
+    color: var(--main-color);
+    border: 2px var(--main-color) solid;
+}
+
+.navbar .head {
+    color: var(--main-color);
+}
+
+.navbar .head .navbar-brand {
+    color: var(--main-color);
+}
+
+.navbar i {
+    font-size: 20px;
+}
+
+#navbarSupportedContent .nav-item .nav-link {
+    transition: all 0.3s ease;
+}
+
+#navbarSupportedContent .nav-item .nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+#navbarSupportedContent .nav-item .active {
+    color: var(--main-color) !important;
+}
+
+.section1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9)), url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 button {
+    background-color: var(--main-color);
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.section1 h1 {
+    font-size: 64px;
+}
+
+.section1 button:hover {
+    background-color: #c9fe1c00;
+    color: var(--main-color);
+}
+
+.maincolor {
+    color: var(--main-color);
+}
+
+.section1 i {
+    color: var(--main-color);
+}
+
+.section1 .right {
+    border: 5px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.section1 .right .badge {
+    top: 95%;
+    right: 90%;
+    background-color: black;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.section1 img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    position: relative;
+
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, #cbfe1c, black);
+    top: 50%;
+    left: 58%;
+    transform: translateY(-50%);
+    width: 75px;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, black, #cbfe1c);
+    top: 50%;
+    right: 58%;
+    transform: translateY(-50%);
+    width: 75px;
+}
+
+.section2 {
+    padding-block: 100px;
+}
+
+.carousel .btn1 {
+    position: absolute;
+    top: 110%;
+    width: 50px;
+    left: 35%;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px white solid;
+    transition: all 0.3s ease;
+}
+
+.carousel .btn2 {
+    position: absolute;
+    top: 110%;
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px white solid;
+    transition: all 0.3s ease;
+}
+
+.carousel .btn1:hover {
+    border: 3px var(--main-color) solid;
+    color: var(--main-color);
+}
+
+.carousel .btn2:hover {
+    border: 3px var(--main-color) solid;
+    color: var(--main-color);
+}
+
+.btn3 {
+    background-color: var(--main-color);
+    border: 3px var(--main-color) solid;
+    position: absolute;
+    top: 107.5%;
+    right: 35%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn3:hover {
+    background-color: black;
+    color: var(--main-color);
+}
+
+.img1{
+     background-image: url(../images/latest-games-1.png);
+}
+.img2{
+     background-image: url(../images/latest-games-2.png);
+}
+.img3{
+     background-image: url(../images/latest-games-3.png);
+}
+.img4{
+     background-image: url(../images/latest-games-4.png);
+}
+.img5{
+     background-image: url(../images/latest-games-5.png);
+}
+.img6{
+     background-image: url(../images/latest-games-6.png);
+}
+.img7{
+     background-image: url(../images/latest-games-7.png);
+}
+.img8{
+     background-image: url(../images/latest-games-8.png);
+}
+.img9{
+     background-image: url(../images/latest-games-9.png);
+}
+.slider-img {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.slider-img::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(360deg,#c9fe1ce2,#c9fe1c00,#c9fe1c00);
+    opacity: 0;
+    transition: 0.3s all ease;
+    z-index: 0;
+    border-radius: 15px;
+}
+.slider-img:hover::after{
+    opacity: 1;
+}
+.slider-img .div1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.slider-img .div2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.slider-img .p1 {
+    bottom: -20%;
+    left: 10px;
+    transition: all 0.3s ease;
+}
+.slider-img .div{
+    top: -20%;
+    left: 10px;
+    transition: all 0.3s ease;
+}
+.slider-img:hover .div {
+    top: 10px;
+}
+
+.slider-img:hover p {
+   bottom: 15px;
+}
+
+.sec3-cards {
+    border: 3px rgba(255, 255, 255, 0.348) solid;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.sec3-cards i {
+    background-color: rgba(128, 128, 128, 0.351);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.sec3-cards:hover {
+    border: 3px var(--main-color) solid;
+}
+
+.sec3-cards:hover i {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.section3 {
+    padding-block: 100px;
+    position: relative;
+}
+
+.section3::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, black, #cbfe1c, black);
+    width: 600px;
+    height: 3px;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.animation {
+    overflow: hidden;
+}
+
+.track1 {
+    width: max-content;
+    animation: scrollleft 40s linear infinite;
+}
+
+.track2 {
+    width: max-content;
+    animation: scrollright 40s linear infinite;
+}
+
+.track1 img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track2 img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes scrollleft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollright {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.section4 {
+    padding-block: 100px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    top: 70%;
+    right: -5%;
+}
+
+.gamer1 {
+    height: 300px;
+    background-image: url(../images/avatar-1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer2 {
+    height: 300px;
+    background-image: url(../images/avatar-2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer3 {
+    height: 300px;
+    background-image: url(../images/avatar-3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer4 {
+    height: 300px;
+    background-image: url(../images/avatar-4.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer5 {
+    height: 300px;
+    background-image: url(../images/avatar-5.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer6 {
+    height: 300px;
+    background-image: url(../images/avatar-6.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer7 {
+    height: 300px;
+    background-image: url(../images/avatar-7.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer8 {
+    height: 300px;
+    background-image: url(../images/avatar-8.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.gamer1::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer1:hover::after {
+    bottom: 100%;
+}
+
+.gamer2::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer2:hover::after {
+    bottom: 100%;
+}
+
+.gamer3::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer3:hover::after {
+    bottom: 100%;
+}
+
+.gamer4::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer4:hover::after {
+    bottom: 100%;
+}
+
+.gamer5::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer5:hover::after {
+    bottom: 100%;
+}
+
+.gamer6::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer6:hover::after {
+    bottom: 100%;
+}
+
+.gamer7::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer7:hover::after {
+    bottom: 100%;
+}
+
+.gamer8::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.gamer8:hover::after {
+    bottom: 100%;
+}
+.contact_card i{
+    background-color: var(--main-color);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_card{
+    border: var(--main-color) solid 3px;
+    border-radius: 15px;
+}
+.join{
+    background: linear-gradient(90deg,#c9fe1ce2,green);
+    border-radius: 15px;
+}
+.join i{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.join i:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px black solid;
+}
+.section5{
+    padding-block: 100px;
+}
+.send_msg{
+    border: var(--main-color) solid 3px;
+    border-radius: 15px;
+}
+.send_msg input{
+    border-radius: 15px;
+    border: white solid 3px;
+    background-color: black;
+    color: white;
+}
+.send_msg select{
+    border-radius: 15px;
+    border: white solid 3px;
+    background-color: black;
+    color: white;
+}
+.send_msg textarea{
+    border-radius: 15px;
+    border: white solid 3px;
+    background-color: black;
+    color: white;
+    height: 150px;
+    overflow: auto;
+}
+.send_msg input:focus{
+    border: var(--main-color) solid 3px;
+}
+.send_msg textarea:focus{
+    border: var(--main-color) solid 3px;
+}
+.send_msg select:focus{
+    border: var(--main-color) solid 3px;
+}
+#check{
+    height: 25px;
+    width: 25px;
+}
+.send_msg button{
+    position: relative;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    border: var(--main-color) solid 2px;
+}
+.send_msg button::after{
+    content: "";
+    position: absolute;
+    top: 120%;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+@media screen and (max-width:1000px) {
+    .section1 {
+        padding: 300px;
+    }
+    .section1 .container .row{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .section1 .row .col-12{
+        width: 100%;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .marginbot{
+        margin-bottom: 30px;
+    }
+    .hightfit{
+        height: 336px;
+    }
+    .carousel .btn2{
+        left: 100%;
+    }
+    .carousel .btn1{
+        left: 0;
+    }
+    .carousel .btn3{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%;
+    }
+    h2::before{
+        right: 65%;
+    }
+    h2::after{
+        left: 65%;
+    }
+    .rotate{
+        right: 5%;
+    }
+}
+footer{
+    padding-block: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.379);
+}
+footer .row{
+    border-bottom:1px solid rgba(255, 255, 255, 0.379) ;
+}
+.footerhover{
+    transition: all 0.3s ease;
+}
+.footerhover:hover{
+    color: var(--main-color) !important;
+}
+.contentfit{
+    width: fit-content;
+}
